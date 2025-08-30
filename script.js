@@ -7,12 +7,12 @@ const dictionaryArea = document.querySelector('.dictionary-app')
 
 
 
-// https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+// https://freedictionaryapi.com/api/v1/entries/en/hello
 
 
 
 async function dictionaryFn(word){
-    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    const res = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${hello}`)
     .then(res => res.json())
 
     return res[0]
