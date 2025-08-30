@@ -1,4 +1,3 @@
-
 const input = document.querySelector('input')
 const btn = document.querySelector('button')
 const dictionaryArea = document.querySelector('.dictionary-app')
@@ -7,12 +6,12 @@ const dictionaryArea = document.querySelector('.dictionary-app')
 
 
 
-// https://freedictionaryapi.com/api/v1/entries/en/<word>
+// https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 
 
 
 async function dictionaryFn(word){
-    const res = await fetch(`https://freedictionaryapi.com/api/v1/entries/en/${word}`)
+    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     .then(res => res.json())
 
     return res[0]
